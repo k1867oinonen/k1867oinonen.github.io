@@ -13,23 +13,22 @@ table#Asiakkaat {
 }
 
 table#Asiakkaat th, table#Asiakkaat td {
-    border: 1px solid rgb(25, 140, 245);
-    padding: 3px;
-    
+    border: 1px solid rgb(0, 135, 245);
+    padding: 4px;
 }
 
 table#Asiakkaat th {
-    background-color:rgb(85, 180, 250);
+    background-color:rgb(112, 193, 250);
     font-size: 1.2em;
-    color:rgb(255, 241, 176);
+    color:rgb(255, 227, 191);
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
 table#Asiakkaat tr:nth-child(even) {
-    background-color: rgb(200, 240, 255);
+    background-color: rgb(168, 205, 247);
 }
 
 table#Asiakkaat tr:nth-child(odd) {
-    background-color:rgb(135, 240, 255);
+    background-color:rgb(151, 225, 255);
 }
