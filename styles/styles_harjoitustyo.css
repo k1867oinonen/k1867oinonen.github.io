@@ -80,8 +80,8 @@ address {
 
 dl {
     display: table;
-    margin: 0 auto;
     text-align: left;
+    margin-left: 25%;
 }
 
 hr {
