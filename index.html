@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <!-- <title> täytyy olla <head>:in sisällä aina-->
-    <title>Teo Oinonen - K1867</title>
+    <title>Teo Oinonen - Layout 960px</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS linkitys-->
-    <link rel="stylesheet" type="text/css" href="styles/styles_harjoitustyo.css">
+    <link rel="stylesheet" type="text/css" href="styles/layout.css">
 </head>
 
-<!-- <body> sisältää käytännössä kaiken sivuston sisällön -->
 <body>
+    <!--  Page alkaa -->
+    <div id="page">
+        <!-- Header alkaa -->
+        <div id="header">
+            <div id="header_logo">Logo tähän</div>
+            <div id="header_center">Keski</div>
+            <div id="header_right">Oikea</div>
+        </div>
+        <!-- Header loppuu -->
 
-    <h1 class="banner">Teo Oinonen</h1>
-    <!-- <nav> navigaatio linkit (sivuston "pää" linkit)-->
-        <nav class="navbar">
-            <a href="index.html" id="valittu"><b>Etusivu</b></a> |
-            <a href="harrastukset.html">Harrastukset</a> |
-            <a href="portfolio.html">Portfolio</a>
-        </nav>
+        <!-- Menu alkaa -->
+        <div id="menu">
+            <nav class="navbar">
+                <a href="index.html">Etusivu</a> |
+                <a href="index.html">Harrastukset</a> |
+                <a href="index.html">Portfolio</a> 
+            </nav>
+        </div>
+        <!-- Menu loppuu -->
 
-        <br>
-            <img src="images/omakuva.jpg" alt="Oma kuva" style="width:15%; height:15%; max-width:200px; min-width: 120px">
-        <br>
+        <!-- Content alkaa -->
+        <div id="content">
+            <div id="content_left">
+                <p>
+                    Nimeni on Teo Oinonen ja työskentelen tällä hetkellä projektisihteerinä
+                    Jyväskylän ammattikorkeakoulussa. Aloitin työt JAMK:ssa joulukuussa 2020. 
+                    <br>
+                    Työskentelin kirjanpidon ja muun talouden hoidon parissa Alteams Oy:ssä 2,5 vuoden ajan aikavälillä 2018-2020. 
+                    <br>
+                    Lisäksi olen kerennyt toimimaan viitisen vuotta taksinkuljettajana Jyväskylässä vuosina 2012-2017.
+                </p>
+                <p>
+                    Seuraava tavoitteeni on päästä kouluttautumaan tieto- ja viestintätekniikan insinööriksi.
+                </p>
+            </div>
+            <div id="content_right">
+                <p> Harrastuksiini kuuluu kitaran soitto, frisbeegolf, tietokonepelit sekä tennis.</p>
+                <p>
+                    Kitaran soittoa olen harrastanut reilut 10 vuotta, 
+                    frisbeegolfia muutaman vuoden ja tietokonepelejä lähes koko elämäni.
+                    <br>
+                    Tennis on harrastuksistani tuorein, sillä olen aloittanut pelaamisen alle vuosi sitten.
+                </p>
+            </div>                   
+        </div>
+        <!-- Content loppuu -->
 
-        <p>Nimeni on Teo Oinonen ja työskentelen tällä hetkellä projektisihteerinä 
-        <a href="https://www.jamk.fi" target="_blank">Jyväskylän ammattikorkeakoulussa</a>.
-        
-        Aloitin työt JAMK:ssa joulukuussa 2020. 
-        <br>
-        Työskentelin kirjanpidon ja muun talouden hoidon parissa Alteams Oy:ssä 2,5 vuoden ajan aikavälillä 2018-2020. 
-        <br>
-        Lisäksi olen kerennyt toimimaan viitisen vuotta taksinkuljettajana Jyväskylässä vuosina 2012-2017.
-        <br>
-        Seuraava tavoitteeni on päästä kouluttautumaan tieto- ja viestintätekniikan insinööriksi.
-        </p>
-        
-    <h2>Harrastukset</h2>
-        <p><a href="harrastukset.html">Harrastuksiini</a> kuuluu mm. kitaran soitto, frisbeegolf, tietokonepelit sekä tennis.
-        <br>
-        Kitaransoittoa olen harrastanut reilut 10 vuotta, 
-        frisbeegolfia muutaman vuoden ja tietokonepelejä lähes koko elämäni. 
-        Tennis on harrastuksistani tuorein, sillä olen aloittanut pelaamisen alle vuosi sitten.
-        </p>
-        <ul>
-            <li>Kitaransoitto</li>
-            <li>Frisbeegolf</li>
-            <li>Tietokonepelit</li>
-            <li>Tennis</li>
-        </ul>
-        <br>
-        <hr>
-
-        <nav class="bottomnav">
-            <a href="#top">Sivun alkuun</a>
-        </nav>
-
-<footer>    
-    <h3>Yhteystiedot</h3>
-    <!-- <address> = yhteystiedot-->
-        <address>
-            <strong>Email:</strong> <a href="mailto:k1867@student.jamk.fi"> k1867@student.jamk.fi</a>
-            <br>
-            <strong>Puh:</strong> 044 9706409
-        </address>
-</footer>
-
+        <!-- Footer alkaa -->
+        <div id="footer">
+            <address>
+                Email: k1867@student.jamk.fi // Puh: 044 9706409
+            </address>
+        </div>
+        <!-- Footer loppuu -->
+    </div>
+    <!-- Page loppuu -->
 </body>
 </html>
