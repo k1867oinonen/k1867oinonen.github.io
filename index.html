@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <title>Teo Oinonen - Layout 960px</title>
+    <title>Teo Oinonen - Skaalautuva layout</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
 <body>
@@ -13,18 +13,18 @@
     <div id="page">
         <!-- Header alkaa -->
         <div id="header">
-            <div id="header_logo">Logo tähän</div>
-            <div id="header_center">Keski</div>
-            <div id="header_right">Oikea</div>
+            Teo Oinonen
         </div>
         <!-- Header loppuu -->
 
         <!-- Menu alkaa -->
-        <div id="menu">
-            <nav class="navbar">
-                <a href="index.html">Etusivu</a> |
-                <a href="index.html">Harrastukset</a> |
-                <a href="index.html">Portfolio</a> 
+        <div id="nav">
+            <nav>
+                <ul>
+                    <li><a class="active" href="#home">ETUSIVU</a></li>
+                    <li><a href="#harrastukset">HARRASTUKSET</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                </ul>
             </nav>
         </div>
         <!-- Menu loppuu -->
@@ -32,6 +32,7 @@
         <!-- Content alkaa -->
         <div id="content">
             <div id="content_left">
+                <h2>Tietoa</h2>
                 <p>
                     Nimeni on Teo Oinonen ja työskentelen tällä hetkellä projektisihteerinä
                     Jyväskylän ammattikorkeakoulussa. Aloitin työt JAMK:ssa joulukuussa 2020. 
@@ -45,6 +46,7 @@
                 </p>
             </div>
             <div id="content_right">
+                <h2>Harrastuksista</h2>
                 <p> Harrastuksiini kuuluu kitaran soitto, frisbeegolf, tietokonepelit sekä tennis.</p>
                 <p>
                     Kitaran soittoa olen harrastanut reilut 10 vuotta, 
@@ -52,7 +54,9 @@
                     <br>
                     Tennis on harrastuksistani tuorein, sillä olen aloittanut pelaamisen alle vuosi sitten.
                 </p>
-            </div>                   
+                <img src="images/kannettava.png" alt="kuva kannettavasta">
+                <p>Kuva: Kannettava</p>
+            </div>                  
         </div>
         <!-- Content loppuu -->
 
