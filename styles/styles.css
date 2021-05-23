@@ -4,14 +4,14 @@ body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
 
-#page {
+article.page {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     background-color: coral;
 }
 
-#header {
+header {
     padding: 1em;
     text-align: center;
     font-size: 200%;
@@ -20,20 +20,20 @@ body {
     letter-spacing: 0.1875em;
 }
 
-#nav, #footer {
+nav, footer {
     height: 1.875em;
     background-color: #E49A2F;
     color: #F7F5EE;
     text-align: center;
 }
 
-#content {
+section {
     background-color: #D8CCAF;
     width: 100%;
     overflow: hidden;
 }
 
-#content_left {
+section.content_left {
     width: 41%;
     float: left;
     background-color: #F7F5EE;
@@ -47,7 +47,7 @@ body {
     border-radius: 12px;
 }
 
-#content_right {
+section.content_right {
     width: 41%;
     float: right;
     background-color: #F7F5EE;
@@ -61,9 +61,13 @@ body {
     border-radius: 12px;
 }
 
+h1 {
+    margin: auto;
+}
+
 h2 {
     color: #E49A2F;
-    padding-left: 0.875em;
+    padding-left: 0.5em;
 }
 
 ul {
@@ -74,6 +78,7 @@ ul {
     background-color: #E49A2F;
     height: 1.875em;
     text-align: center;
+    max-height: 30px;
 }
   
 li {
@@ -84,7 +89,7 @@ li a {
     display: inline-block;
     color: white;
     text-decoration: none;
-    padding: 0.2em 1em;
+    padding: 0.2em 0.75em;
 }
   
 li a:hover:not(.active) {
@@ -102,4 +107,16 @@ img {
 
 address {
     padding: 0.2em;
+}
+
+.teksti_unica {font-family: 'Unica One', cursive;}
+.teksti_lato {font-family: 'Lato', sans-serif;}
+.teksti_great {font-family: 'Fredericka the Great', cursive;}
+
+.fa-home, .fa-guitar, .fa-suitcase {
+    color: #707070;
+}
+
+.fa-lightbulb, .fa-icons, .fa-at, .fa-phone {
+    color: #575757;
 }
