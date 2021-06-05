@@ -11,7 +11,7 @@ article.page {
 }
 
 header {
-    background-image: url("../images/banner4.jpg");
+    background-image: url("../images/banner8.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
@@ -40,10 +40,9 @@ header img {
 }
 
 .some {
-    height: 1.875em;
     text-align: left;
     background-color: rgba(0, 0, 0, 0);
-    padding-left: 1em;
+    padding-left: 2em;
     position: absolute;
 }
 .navbar {
@@ -84,8 +83,8 @@ li .active {
 }
 
 h2 {
-    background-color: rgb(0, 0, 0);
-    background-size: 100%;
+    background-image: url(../images/otsikot3pieni.jpg);
+    background-size: 100% 100%;
     color: rgb(230, 190, 0);
     padding-left: 2em;
 }
@@ -108,6 +107,10 @@ section {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
 }
+
+.fab {
+    padding-top: 1em;
+}
 .teksti_unica {font-family: 'Unica One', cursive;}
 .teksti_lato {font-family: 'Lato', sans-serif;}
 .teksti_great {font-family: 'Fredericka the Great', cursive;}
@@ -127,12 +130,39 @@ section {
         padding-right: 2%;
         height: 85%;
     }
+
+    .fab {
+        font-size: 0.75em;
+    }
 }
  @media only screen and (max-width: 50em) {
 
     header {
         text-align:center;
     }
+    h1 {
+        padding: 1em 0 0 0;
+        text-shadow: 0 0 0.115em rgb(255, 255, 255), 0 0 0.1em rgb(230, 190, 0);
+        float: none;
+    
+    }
+    header img {
+        float: none;
+        margin: 0;
+        text-align: center;
+        padding-top: 0;
+        height: 60%;
+    }
+    
+
+ }
+ @media only screen and (max-width: 30em) {
+
+    header {
+        text-align:center;
+    }
+
+
     h1 {
         padding: 1em 0 0 0;
         text-shadow: 0 0 0.115em rgb(255, 255, 255), 0 0 0.1em rgb(230, 190, 0);
