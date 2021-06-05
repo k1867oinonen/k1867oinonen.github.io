@@ -14,7 +14,6 @@ header {
     background-image: url("../images/banner8.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
     letter-spacing: 0.3em;
     height: 20em;
 }
@@ -83,7 +82,7 @@ li .active {
 }
 
 h2 {
-    background-image: url(../images/otsikot3pieni.jpg);
+    background-image: url(../images/header2.jpg);
     background-size: 100% 100%;
     color: rgb(230, 190, 0);
     padding-left: 2em;
