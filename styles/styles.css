@@ -5,118 +5,145 @@ body {
 }
 
 article.page {
-    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color: coral;
+    background-color: rgba(110, 80, 0, 0.3);
 }
 
 header {
-    padding: 1em;
-    text-align: center;
-    font-size: 200%;
-    background-color: #575757;
-    color: #F0EBEB;
-    letter-spacing: 0.1875em;
-}
-
-nav, footer {
-    height: 1.875em;
-    background-color: #E49A2F;
-    color: #F7F5EE;
-    text-align: center;
-}
-
-section {
-    background-color: #D8CCAF;
-    width: 100%;
-    overflow: hidden;
-}
-
-section.content_left {
-    width: 41%;
-    float: left;
-    background-color: #F7F5EE;
-    border: solid 1px #AC9675;
-    margin-left: 3%;
-    margin-right: 0.2em;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
-    padding: 1em;
-    overflow: auto;
-    border-radius: 12px;
-}
-
-section.content_right {
-    width: 41%;
-    float: right;
-    background-color: #F7F5EE;
-    border: solid 1px #AC9675;
-    margin-left: 0.2em;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
-    margin-right: 3%;
-    padding: 1em;
-    overflow: hidden;
-    border-radius: 12px;
+    background-image: url("../images/banner4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    letter-spacing: 0.3em;
+    height: 20em;
 }
 
 h1 {
-    margin: auto;
+    font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 100;
+    font-size: 4em;
+    padding: 2em 1em 0.75em 5em;
+    text-shadow: 0 0 0.115em rgb(255, 255, 255), 0 0 0.1em rgb(230, 190, 0);
+    float: left;
+
 }
 
-h2 {
-    color: #E49A2F;
-    padding-left: 0.5em;
+header img {
+    float: right;
+    margin-top: 2em;
+    padding-right: 5%;
+    height: 90%;
+    
 }
 
+.some {
+    height: 1.875em;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 1em;
+    position: absolute;
+}
+.navbar {
+    height: 1.875em;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+    
 ul {
+    font-family: 'Unica One';
+    height: 0.6em;
+    font-size: 1.25em;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #E49A2F;
-    height: 1.875em;
-    text-align: center;
-    max-height: 30px;
 }
-  
 li {
     display: inline;
 }
-  
+
 li a {
+    height: 1.375em;
     display: inline-block;
-    color: white;
     text-decoration: none;
-    padding: 0.2em 0.75em;
+    color: rgb(230, 190, 0);
+    padding-top: 0.125em;
+    padding-left: 1em;
 }
-  
+
 li a:hover:not(.active) {
-    background-color: #575757;
+    color: rgb(255, 250, 0);
+    text-shadow: 0 0 0.115em rgb(255, 255, 255), 0 0 0.1em rgb(230, 190, 0);
 }
   
 li .active {
     background-color: #bb7d26;
+    text-shadow: 0 0 0.1em rgb(255, 0, 0), 0 0 0.1em rgb(230, 160, 0);
 }
 
-img {
-    width: 100%; 
-    height: auto;
+h2 {
+    background-color: rgb(0, 0, 0);
+    background-size: 100%;
+    color: rgb(230, 190, 0);
+    padding-left: 2em;
 }
 
-address {
-    padding: 0.2em;
+
+footer {
+    background-color: black;
+    height: 1.625em;
+    color: rgb(230, 190, 0);
+    padding-top: 0.25em;
+    text-align: center;
 }
 
+footer a {
+    text-decoration: none;
+    color:rgb(230, 190, 0);
+}
+
+section {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
 .teksti_unica {font-family: 'Unica One', cursive;}
 .teksti_lato {font-family: 'Lato', sans-serif;}
 .teksti_great {font-family: 'Fredericka the Great', cursive;}
 
-.fa-home, .fa-guitar, .fa-suitcase {
-    color: #707070;
-}
+@media only screen and (max-width: 80em) {
 
-.fa-lightbulb, .fa-icons, .fa-at, .fa-phone {
-    color: #575757;
+    h1 {
+        font-size: 3em;
+        padding: 1em 0.1em 0.75em 1em;
+        text-shadow: 0 0 0.115em rgb(255, 255, 255), 0 0 0.1em rgb(230, 190, 0);
+        float: left;
+    
+    }
+    header img {
+        float: right;
+        margin-top: 3em;
+        padding-right: 2%;
+        height: 85%;
+    }
 }
+ @media only screen and (max-width: 50em) {
+
+    header {
+        text-align:center;
+    }
+    h1 {
+        padding: 1em 0 0 0;
+        text-shadow: 0 0 0.115em rgb(255, 255, 255), 0 0 0.1em rgb(230, 190, 0);
+        float: none;
+    
+    }
+    header img {
+        float: none;
+        margin: 0;
+        text-align: center;
+        padding-top: 0;
+        height: 60%;
+    }
+ }
