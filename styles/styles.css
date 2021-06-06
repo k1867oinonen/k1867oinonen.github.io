@@ -134,19 +134,24 @@ section img {
 h3 {
     text-align: center;
     font-size: 1.5em;
+    
 }
 
 .harrastuksetleft img {
-    float: right;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
 }
 
 .harrastuksetright img {
-    float: left;
+    display: block;
+    margin: 0 auto;
+    width: 50%; 
 }
 
 .harrastuksetleft {
     text-align: left;
-    width: 50%;
+    width: 51%;
     float: left;
     background-color: rgb(221, 212, 183);
     border: solid 0.125em black;
@@ -161,7 +166,7 @@ h3 {
 
 .harrastuksetright {
     text-align: left;
-    width: 50%;
+    width: 51%;
     float: right;
     background-color: rgb(221, 212, 183);
     border: solid 0.125em black;
@@ -258,6 +263,13 @@ h3 {
         font-size: 1em;
     }
 
+    .harrastuksetleft {
+        min-width: 20em;
+    }
+    .harrastuksetright {
+        min-width: 20em;
+    }
+
 
 }
 
@@ -349,9 +361,6 @@ w3S breaking pointit oli max37,5  - min48 - min62 ja min75 */
         margin-bottom: 1em;
         margin-right: 0;
         padding: 1em;
-    }
-    .harrastuksetright img {
-        float: right;
     }
     
  }
