@@ -117,6 +117,127 @@ footer a {
     font-size: 1.25em;
 }
 
+section {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+section p {
+    width: 100%;
+}
+section img {
+    height: 100%;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.harrastuksetleft img {
+    float: right;
+}
+
+.harrastuksetright img {
+    float: left;
+}
+
+.harrastuksetleft {
+    text-align: left;
+    width: 50%;
+    float: left;
+    background-color: rgb(221, 212, 183);
+    border: solid 0.125em black;
+    margin-left: 3%;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding: 1em;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.harrastuksetright {
+    text-align: left;
+    width: 50%;
+    float: right;
+    background-color: rgb(221, 212, 183);
+    border: solid 0.125em black;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-right: 3%;
+    padding: 1em;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.timeline {
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-top: -1.5em;
+}
+.timeline p {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 0.25em solid;
+    border-image: linear-gradient(to right, rgb(230, 190, 0) 0%, rgb(0, 0, 0) 100%);
+    border-image-slice: 1;
+    border-width: 0.25em;
+    margin: 0;
+    padding: 2em;
+    counter-increment: section;
+    position: relative;
+    color: black;
+    z-index: -1;
+}  
+.timeline p::before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 0.625em;
+    height: 1.25em;
+    width: 1.25em;
+    background-color: black;
+    text-align: center;
+    line-height: 1.25em;
+    color: rgb(230, 190, 0);
+    font-size: 1em;
+  }
+
+/*parittomat*/
+.timeline p:nth-child(odd) {
+    border-right: 0.25em solid;
+    padding-left: 0;
+    text-align: right;  
+}
+.timeline p:nth-child(odd)::before {
+    left: 100%; 
+    margin-left: -20px;
+  }
+/* parilliset */
+.timeline p:nth-child(even) {
+    border-left: 0.25em solid;
+    padding-right: 0;
+}
+.timeline p:nth-child(even)::before {
+    right: 100%; 
+    margin-right: -20px;
+  }
+
+.timeline p:first-child {
+    border-top: 0;
+    padding-top: 5em;
+}
+.timeline p:last-child {
+    padding-bottom: 5em;
+}
+
+
+
+
 @media only screen and (max-width: 80em) {
 
     h1 {
@@ -136,7 +257,12 @@ footer a {
     .fab {
         font-size: 1em;
     }
+
+
 }
+
+/* PITÄÄÄÄÄÄKÖ LAITTAAAA 48 ?!?!?!?! RWD W3S jotain luki mobiilista
+w3S breaking pointit oli max37,5  - min48 - min62 ja min75 */
  @media only screen and (max-width: 50em) {
 
     header {
@@ -155,6 +281,20 @@ footer a {
         padding-top: 1.46875em;
         height: 60%;
     }
+    .navbar {
+        height: 2em;
+        font-size: 1.25em;
+    }
+    ul {
+        height: 2em;
+    }
+    li a {
+        padding: 0.5em 0.5em 0.125em 0.5em;
+    }
+    section img {
+        width: 30%;
+    }
+
  }
 
  @media only screen and (max-width: 30em) {
@@ -184,4 +324,34 @@ footer a {
         height: 50%;
         padding: 0;
     }
+    li a {
+        padding: 0.5em 0.125em 0.125em 0.125em;
+    }
+    .harrastuksetleft {
+        width: 85%;
+        float: left;
+        background-color: rgb(221, 212, 183);
+        border: solid 0.125em black;
+        margin-left: 2%;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+    
+    .harrastuksetright {
+        width: 85%;
+        float: left;
+        background-color: rgb(221, 212, 183);
+        border: solid 0.125em black;
+        margin-left: 2%;
+        margin-top: 0;
+        margin-bottom: 1em;
+        margin-right: 0;
+        padding: 1em;
+    }
+    .harrastuksetright img {
+        float: right;
+    }
+    
  }
