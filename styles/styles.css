@@ -65,7 +65,7 @@ header img {
 }
 
 ul {
-    font-family: 'Unica One';
+    font-family: 'Unica One', cursive;
     height: 1.5em;
     list-style-type: none;
     margin: 0;
@@ -89,6 +89,8 @@ a:hover:not(.active) {
 }
 
 h2 {
+    font-family: 'Unica One', cursive, sans-serif;
+    text-transform: uppercase;
     background-image: url(../images/header2.jpg);
     background-size: 100% 100%;
     color: rgb(230, 190, 0);
@@ -114,10 +116,6 @@ footer a {
     padding-top: 1em;
     font-size: 1.25em;
 }
-
-.teksti_unica {font-family: 'Unica One', cursive;}
-.teksti_andada {font-family: 'Andada', serif;}
-.teksti_great {font-family: 'Fredericka the Great', cursive;}
 
 @media only screen and (max-width: 80em) {
 
