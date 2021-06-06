@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link href="styles/lightbox.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gabriela&family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Gabriela&family=Unica+One&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/5c6f1d1b13.js" crossorigin="anonymous"></script>
 </head>
@@ -33,15 +33,16 @@
     <!-- Nav -->
     <nav class="navbar">
         <ul>
-            <li><a href="#harrastukset">TIETOJA</a></li>
+            <li><a href="#tietoja">TIETOJA</a></li>
             <li><a href="#harrastukset">&nbsp; HARRASTUKSET</a></li>
             <li><a href="#portfolio">&nbsp; PORTFOLIO</a></li>
         </ul>
     </nav>
 
     <section>
-        <section class="content_left">
-            <h2>Tietoa</h2>
+        <section class="Tietoja">
+            <a id="tietoja" class="anchor"></a>
+            <h2>Tietoja</h2>
             <p>
                 Nimeni on Teo Oinonen ja työskentelen tällä hetkellä projektisihteerinä
                 Jyväskylän ammattikorkeakoulussa. Aloitin työt JAMK:ssa joulukuussa 2020. 
@@ -56,6 +57,7 @@
             </p>
         </section>
         <section class="Harrastukset">
+            <a id="harrastukset" class="anchor"></a>
             <h2>Harrastukset</h2>
             <p>Harrastuksiini kuuluu kitaran soitto, frisbeegolf, tietokonepelit sekä tennis.
                 <br>
@@ -115,24 +117,54 @@
                     <a href="images/kitara.jpg" data-lightbox="Harrastukset" data-title="Epiphone Prophecy LP Custom Plus EX-MS "><img src="images/kitara.jpg" alt="Epiphone, sähkökitara" style="width:150px; height:auto"></a>
                     <a href="images/kiekot.jpg" data-lightbox="Harrastukset" data-title="Frisbeegolf kiekkoja"><img src="images/kiekot.jpg" alt="Frisbeegolf kiekkoja" style="width:150px; height:auto"></a>
                     <a href="images/tennis.jpg" data-lightbox="Harrastukset" data-title="Babolat, Drive G"><img src="images/tennis.jpg" alt="Babolat, Tennismaila" style="width:150px; height:auto"></a>
-                    <br>
-            
                 </p>
 
-
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section class="Portfolio">
+        <a id="portfolio" class="anchor"></a>
+            <h2>Portfolio</h2>
+                <p>
+                    Olen käynyt muutama vuosi sitten web-ohjelmointiin ja ohjelmointiin liittyviä kursseja, joista jäi sellainen tunne, että tätä olisi joskus mukava tehdä enemmänkin.
+                    Nyt tavoitteenani on päästä opiskelemaan <strong>tieto- ja viestintätekniikan</strong> ammattilaiseksi JAMK:ssa ja sen myötä työskentelemään alalle.
+                </p>
+                <br>
+                <p>
+                    Olen vastuuntuntoinen, luotettava sekä ahkera työntekijä, joka suorittaa itselle osoitetut tehtävät aina parhaalla mahdollisella osaamisella.
+                    Koen olevani hyvä tiimityöskentelijä, "hauska" ja helposti lähestyttävä ihminen.
+                    Pyrin kohtaamaan asiat positiivisella asenteella.
+                </p>
+            <h3>Työpaikat</h3>
+                <p>
+                    Alla on lista työurani merkittävimmistä työpaikoista:
+                </p>
+                <br>
+                <dl>
+                    <dt><strong>Jyväskylän Ammattikorkeakoulu</strong></dt>
+                        <dd>- Projektisihteeri ; 12/2020-</dd>
+                    <dt><br><strong>Alteams Oy</strong></dt>
+                        <dd>- Pääkirjanpitäjä ; 12/2019-11/2020</dd>
+                        <dd>- Taloushallinnon assistentti ; 5/2018-11/2019</dd>
+                    <dt><br><strong>Taksi Pasi Penttinen Oy</strong></dt>
+                        <dd>- Taksinkuljettaja ; 12/2012-10/2017</dd>
+                </dl>
+            <h3>Varusmiespalvelus</h3>
+                <p> Suoritin varusmiespalvelukseni vuonna 2011-2012 Keuruun pioneerirykmentissä.
+                    Olen sotilasarvoltani pioneeri ja erikoistuin sotilaskuljettaksi.
+        
+                </p>
 
         </section>
     </section>
     </article>  
 
+    <a class="backtop" href="#"> <i class="far fa-arrow-alt-circle-up"></i></a>
+
     <footer>
         <address>
-            <i class="far fa-envelope">:</i> <a href="mailto:k1867@student.jamk.fi">k1867@student.jamk.fi</a>  &nbsp;&nbsp; <i class="fas fa-phone">:</i> 044 9706409
+            <i id="far fa-envelope">:</i> <a href="mailto:k1867@student.jamk.fi">k1867@student.jamk.fi</a>  &nbsp;&nbsp; <i class="fas fa-phone">:</i> 044 9706409
         </address>
     </footer>
-    <script src="js/lightbox-plus-jquery.min.js"> </script>    
+    
+    <script src="js/lightbox-plus-jquery.min.js"> </script>
 </body>
-
 
 </html>

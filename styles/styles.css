@@ -1,13 +1,14 @@
 body {
     margin: 0;
     font-size: 100%;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
 
 article.page {
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(110, 80, 0, 0.3);
+    font-family: 'Cabin', sans-serif;
+    font-weight: normal;
 }
 
 header {
@@ -47,16 +48,25 @@ header img {
     position: absolute;
 }
 .navbar {
-    height: 1.875em;
+    height: 1.5em;
+    font-size: 1.625em;
     text-align: center;
     background-color: rgb(0, 0, 0);
     overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
-    
+
+.anchor {
+    display: block;
+    margin-top: -1em;
+    height: 1em;
+}
+
 ul {
     font-family: 'Unica One';
-    height: 0.6em;
-    font-size: 1.25em;
+    height: 1.5em;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -70,29 +80,22 @@ li a {
     display: inline-block;
     text-decoration: none;
     color: rgb(230, 190, 0);
-    padding-top: 0.125em;
-    padding-left: 1em;
+    padding: 0.125em 0.5em 0 0.5em;
 }
 
-li a:hover:not(.active) {
+a:hover:not(.active) {
     color: rgb(255, 250, 0);
     text-shadow: 0 0 0.115em rgb(255, 255, 255), 0 0 0.1em rgb(230, 190, 0);
-}
-  
-li .active {
-    background-color: #bb7d26;
-    text-shadow: 0 0 0.1em rgb(255, 0, 0), 0 0 0.1em rgb(230, 160, 0);
 }
 
 h2 {
     background-image: url(../images/header2.jpg);
     background-size: 100% 100%;
     color: rgb(230, 190, 0);
-    padding: 1.25em 0em;
+    padding: 1em 0em;
     text-align: center;
     
 }
-
 
 footer {
     background-color: black;
@@ -107,14 +110,11 @@ footer a {
     color:rgb(230, 190, 0);
 }
 
-section {
-    font-family: 'Lato', sans-serif;
-    font-weight: normal;
-}
-
 .fab {
     padding-top: 1em;
+    font-size: 1.25em;
 }
+
 .teksti_unica {font-family: 'Unica One', cursive;}
 .teksti_andada {font-family: 'Andada', serif;}
 .teksti_great {font-family: 'Fredericka the Great', cursive;}
@@ -181,7 +181,7 @@ section {
     }
  }
 
- @media only screen and (max-width: 24.8125em) {
+ @media only screen and (max-width: 25.25em) {
     header img {
         height: 50%;
         padding: 0;
