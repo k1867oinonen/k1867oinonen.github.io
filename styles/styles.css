@@ -16,10 +16,12 @@ header {
     background-repeat: no-repeat;
     letter-spacing: 0.3em;
     height: 20em;
+    max-height: 20em;
+    overflow: hidden;
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Gabriela', serif;
 	text-transform: uppercase;
 	margin: 0;
 	font-weight: 100;
@@ -48,6 +50,7 @@ header img {
     height: 1.875em;
     text-align: center;
     background-color: rgb(0, 0, 0);
+    overflow: hidden;
 }
     
 ul {
@@ -85,7 +88,9 @@ h2 {
     background-image: url(../images/header2.jpg);
     background-size: 100% 100%;
     color: rgb(230, 190, 0);
-    padding-left: 2em;
+    padding: 1.25em 0em;
+    text-align: center;
+    
 }
 
 
@@ -111,7 +116,7 @@ section {
     padding-top: 1em;
 }
 .teksti_unica {font-family: 'Unica One', cursive;}
-.teksti_lato {font-family: 'Lato', sans-serif;}
+.teksti_andada {font-family: 'Andada', serif;}
 .teksti_great {font-family: 'Fredericka the Great', cursive;}
 
 @media only screen and (max-width: 80em) {
@@ -149,12 +154,11 @@ section {
         float: none;
         margin: 0;
         text-align: center;
-        padding-top: 0;
+        padding-top: 1.46875em;
         height: 60%;
     }
-    
-
  }
+
  @media only screen and (max-width: 30em) {
 
     header {
@@ -172,7 +176,14 @@ section {
         float: none;
         margin: 0;
         text-align: center;
-        padding-top: 0;
+        padding-top: 1.5em;
         height: 60%;
+    }
+ }
+
+ @media only screen and (max-width: 24.8125em) {
+    header img {
+        height: 50%;
+        padding: 0;
     }
  }
