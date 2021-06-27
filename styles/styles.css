@@ -302,6 +302,9 @@ h4 {
         float: none;
         margin-bottom: 1em;
     }
+    .some {
+        padding-left: 0em;
+    }
 
 }
 
