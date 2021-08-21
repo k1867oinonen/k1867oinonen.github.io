@@ -1,4 +1,8 @@
-body {
+html {
+    scroll-behavior: smooth;
+  } /*lisätty uutena, MIKSI EI OLE OLLUT html aiemmin o.O ???*/ 
+
+  body {
     margin: 0;
     font-size: 100%;
 }
